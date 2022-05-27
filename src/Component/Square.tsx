@@ -1,12 +1,15 @@
-import React from "react";
 
 type Props = {
-  value: number;
+  value: string;
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 
 const Square: React.FC<Props> = (props) => {
   return (
-    <button className="square" onClick={() => console.log("click")}>
+    <button
+      className="square"
+      onClick={props.onClick}
+    >
       {props.value}
     </button>
   );
