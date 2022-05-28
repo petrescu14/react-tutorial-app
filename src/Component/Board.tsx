@@ -6,9 +6,6 @@ type Props = {
 }
 
 const Board: React.FC<Props> = (props) => {
-  // const [squares, setSquares] = useState<string[]>(Array(9).fill(""));
-  // const [xIsNext, setXIsNext] = useState<boolean>(true)
-
   const renderSquare = (i: number) => {
     return (
       <Square
